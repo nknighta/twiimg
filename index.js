@@ -14,7 +14,7 @@ const twiimg = async () => {
 
         const buffer = Buffer.from(arrayBuffer);
         const getimgdate = Date();
-        fs.writeFileSync(`./images/${imagename}.png`, buffer);
+        fs.writeFileSync(`./${imagename}.png`, buffer);
     } catch (e) {
         console.log("fail image download");
     }
